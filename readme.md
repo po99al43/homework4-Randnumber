@@ -1,0 +1,2 @@
+檔案名getnumber.php是1~49隨機取6個不重複的數
+檔案名randnumber.php可自訂義範圍以及取多少值
