@@ -4,6 +4,14 @@ if(isset($_POST["btn"]))
     if(($_POST["num1"]&&  ($_POST["num2"]>=$_POST["num1"]) && ($_POST["rang"] < ($_POST["num2"] + $_POST["num1"]))) != 0)
     {
         require("test.php");
+        $test = new test;
+        echo $test->getnumber
+                (
+                    ($test->arr($_POST["num1"],$_POST["num2"],$_POST["rang"])),
+                    $_POST["num1"],
+                    $_POST["num2"],
+                    $_POST["rang"]
+                );
     }
     else
     {

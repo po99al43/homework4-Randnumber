@@ -1,11 +1,12 @@
 <?php
+class test{
     function arr($n1,$n2,$rang)
     {
         for($i=$n1;$i<=$n2;$i++)
         {
                 $ar[$i] = $i ;
         }
-       getnumber($ar,$n1,$n2,$rang);
+       return $ar;
     }
 
 
@@ -21,9 +22,9 @@
                 $i ++;
             }
        }
-            echo $str;
-            return;
+            return $str;
     }
+}
 
-arr($_POST["num1"],$_POST["num2"],$_POST["rang"]);
+        //arr($_POST["num1"],$_POST["num2"],$_POST["rang"]);
 ?>
