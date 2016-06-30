@@ -1,10 +1,12 @@
 <?php
 if(isset($_POST["btn"]))
 {
-    if(($_POST["num1"]&&  ($_POST["num2"]>=$_POST["num1"]) && ($_POST["rang"] < ($_POST["num2"] + $_POST["num1"]))) != 0){
+    if(($_POST["num1"]&&  ($_POST["num2"]>=$_POST["num1"]) && ($_POST["rang"] < ($_POST["num2"] + $_POST["num1"]))) != 0)
+    {
         require("test.php");
     }
-    else{
+    else
+    {
        print $_POS["di"] = "欄位不正確";
     }
 }
